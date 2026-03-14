@@ -13,6 +13,8 @@ This project uses three tracking files that work together. Claude must read all 
 | `CLAUDE.md` | Conventions, architecture, rules — the rulebook | When a new convention is established or a rule changes |
 | `DECISIONS.md` | Architectural decisions and what NOT to do | When a significant new architectural choice is made during the session |
 | `PROGRESS.md` | Current build state, what is done, what is broken | At the **end of every session**, always |
+| `SCHEMA.md` | DB column names, types, enum values, query parser output shape — read-only reference | Only when a schema decision changes; update here first, then log in DECISIONS.md, then update code |
+| `API_CONTRACT.md` | FastAPI endpoint URLs, request/response shapes — read-only reference | Only when an endpoint contract changes; update here first, then update `api.py` and frontend together |
 
 ### How Claude should use these files
 
